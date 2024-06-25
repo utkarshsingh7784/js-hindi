@@ -27,6 +27,29 @@ const obj4 = {5:"e", 6:"f"}
 //or
 const obj3 = {...obj1,...obj2,...obj4}
 
+// console.log(obj3);
 
-console.log(obj3);
+//data base se return value format
+
+const user = [
+    {
+        id:1,
+        email:"hello@"
+    },
+    {
+        id:1,
+        email:"hello@"
+    },
+    {
+        id:1,
+        email:"hello@"
+    },
+]
+user[1].email
+console.log(tinderUser);
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //check value exist or not
 
