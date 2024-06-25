@@ -1,3 +1,6 @@
+//object ko singlton bhi kr skte hai. aur object literals ko bhi kr skte hai
+
+
 // singleton means- koi bhi constructor se jab aap banate hai toh singleton ek object banta hai.
 //yaani ye apni tarike ka ek hi objet hai.
 
@@ -5,7 +8,6 @@
 
 
 //object literals
-
 const muSym = Symbol("key1") //symbol ko object ke inside add karna
 
 const jsUser = {
