@@ -15,7 +15,12 @@ const dc_heros =["superman","batman","flash"]
 // const real_another_array = another_array.flat(Infinity)
 // console.log(real_another_array);
 
-console.log(Array.isArray("gaurav"));
-console.log(Array.from("gaurav"));
+// console.log(Array.isArray("gaurav"));
+// console.log(Array.from("gaurav"));
 
-console.log(Array.from({name:"gaurav"})); //intersting case
+// console.log(Array.from({name:"gaurav"})); //intersting case
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+console.log(Array.of(score1,score2,score3));
