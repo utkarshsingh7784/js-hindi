@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #212121;color: #fff;">
     <div class="parent">
         <div class="day">monday</div>
         <div class="day">tuesday</div>
@@ -14,4 +14,15 @@
     </div>
     
 </body>
+<script>
+  const parent =  document.querySelector('.parent')
+  console.log(parent);
+  console.log(parent.children);
+  console.log(parent.children[1].innerHTML);
+
+  for (let i = 0; i < parent.children.length; i++) {  //parent.children html collection deta hai
+    console.log(parent.children[i].innerHTML);
+    
+  }
+</script>
 </html>
