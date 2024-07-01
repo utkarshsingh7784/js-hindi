@@ -6,17 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>chai aur javascript</h1>
+    <h1>start should change the background color every seconds</h1>
     <button id="start">start</button>
     <button id="stop">stop</button>
 </body>
 <script>
   
-  const sayDate = function(str){
-    console.log(str,Date.now());
-  }
-  const intervalId = setInterval(sayDate,1000,"hi");
-  clearInterval(intervalId)
+  // const sayDate = function(str){
+  //   console.log(str,Date.now());
+  // }
+  // const intervalId = setInterval(sayDate,1000,"hi");
+  // clearInterval(intervalId)
+
+
+  //generate a random color
+
+  const randomColor = function(){
+    const hex = '0123456789ABCDEF'
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+      
+      color += hex[Math.floor(Math.random() * 16)]
+      
+    }
+      return color;
+    }
+    console.log(randomColor());
+  
+
+
+
+
   
 
 </script>
