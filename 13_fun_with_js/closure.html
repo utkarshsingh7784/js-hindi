@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+
+<script>
+    //lexical scoping
+
+    // function outer (){
+    //     let username = "amit"
+
+    //     function inner(){
+    //         let secret = "my secret"
+    //         console.log("inner", username);
+    //     }
+
+    //     function innerTwo(){
+    //         console.log(secret);
+    //         console.log("inner two", username);
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+
+    // outer()
+    // console.log("too outer", username);
+
+
+//closure means -- jab ek function return kar dete hai .toh sirf function return nhi hota uska poora
+//scope return hota hai balki lexical scope return hota hai
+
+// function makeFunc() {
+//   const name = "Mozilla";
+//   function displayName() {
+//     console.log(name);
+//   }
+//   return displayName;
+// }
+// const myFunc = makeFunc();
+// myFunc();
+
+
+
+
+</script>
+
+<script>
+  // document.getElementById("orange").onclick = function(){
+  //   document.body.style.backgroundColor = `orange`
+  // }
+
+  // document.getElementById("green").onclick = function(){
+  //   document.body.style.backgroundColor = `green`
+  // }
+
+  function clickHandler (color){
+  //  document.body.style.backgroundColor = `${color}`  //not working
+
+    return function(){
+ document.body.style.backgroundColor = `${color}`
+    }
+  }
+
+  document.getElementById("orange").onclick = clickHandler("orange")
+  document.getElementById("green").onclick = clickHandler("green")
+
+</script>
+
+
+</html>
